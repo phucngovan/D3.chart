@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3Chart</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<svg width="500" height="500">
+    <rect x="0" y="0" width="300" height="200" fill="yellow"></rect>
+</svg>
+<p>phucdz</p>
+<p id="p2">phuc0712</p>
+<p class="myclass">phuc07121995</p>
+<table>
+<tr>
+    <td>
+        One
+    </td>
+    <td>
+        Two
+    </td>
+</tr>
+<tr>
+    <td>
+        Three
+    </td>
+    <td>
+        Four
+    </td>
+</tr>
+</table>
+<script>
+    d3.selectAll("p").style("color","red")
+    // laytheoid
+    d3.select("#p2").style("color", "blue");
+    // theoclass
+    d3.selectAll(".myclass").style('color','green')
+    d3.select("tr").selectAll("td").style('background-color','yellow');
+</script>
+</body>
+</html>

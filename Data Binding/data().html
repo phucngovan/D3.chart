@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+<body>
+<!--<p> D3 tutorials</p>-->
+<!--<script>-->
+<!--    let myData = ['hello word!'];-->
+<!--    let p = d3.select('body')-->
+<!--    .selectAll('p')-->
+<!--    .data(myData)-->
+<!--    .text(function (d) {-->
+<!--        return d;-->
+<!--    })-->
+<!--    //myData phai la 1 mang neu khong phai mang se khong thay doi-->
+<!--</script>-->
+<p> </p>
+<p> </p>
+<p> </p>
+<script>
+    var myData = ["Hello World!", "Hello D3","Hello JavaScript"];
+
+    var p = d3.select("body")
+        .selectAll("p")
+        .data(myData)
+        .text(function (d, i) {
+            console.log(d);
+            console.log(i);
+            return d;
+        });
+</script>
+</body>
+</html>
